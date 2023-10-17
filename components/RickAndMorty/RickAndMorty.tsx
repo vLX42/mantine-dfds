@@ -35,7 +35,7 @@ export async function RickAndMorty() {
   const data = await getCharacters();
   return (
     <Container>
-      <h1>Rick and Morty</h1>
+      <h1>Rick and Morty - SSR</h1>
       <Grid>
         {data.map((character) => (
           <GridCol span={3} key={character.id}>

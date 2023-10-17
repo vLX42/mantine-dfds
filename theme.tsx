@@ -1,7 +1,7 @@
 'use client';
 import { Input, Select, createTheme, rem } from '@mantine/core';
 import { generateColors } from '@mantine/colors-generator';
-import ChevronDown from 'icons/src/system/ChevronDown';
+import ChevronDown from './icons/src/system/ChevronDown';
 import classes from './theme.module.css';
 
 import { dfdsFont } from './fonts';

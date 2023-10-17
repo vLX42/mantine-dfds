@@ -1,4 +1,3 @@
-import { css } from '@emotion/react'
 import React, { ComponentPropsWithRef, forwardRef } from 'react'
 import * as systemIcons from './system'
 
@@ -38,11 +37,6 @@ const sizes: { [k in Size]: string } = {
   xl: '2.5rem',
 }
 
-const inlineCss = (size: string) => css`
-  display: inline;
-  margin-top: calc(-${size} / 6);
-  margin-bottom: calc(-${size} / 6);
-`
 /**
  * The `SystemIcon` component is a helper component for displaying icons in the **system** set in "sane" sizes.
  */
@@ -55,7 +49,6 @@ export const SystemIcon = forwardRef<SVGSVGElement, SystemIconProps>(
         className={className}
         height={sizeValue}
         width={sizeValue}
-        css={inline && inlineCss(sizeValue)}
         {...rest}
         ref={ref}
       />

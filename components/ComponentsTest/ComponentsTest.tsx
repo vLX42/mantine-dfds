@@ -9,7 +9,7 @@ import {
   Container,
   Select,
 } from '@mantine/core';
-import { Calendar } from '@dfds-ui/icons/system';
+import { Calendar } from '@/icons/src/system/';
 
 export function ComponentsTest() {
   const { setColorScheme } = useMantineColorScheme();

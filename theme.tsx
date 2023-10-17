@@ -1,11 +1,10 @@
-'use client'
+'use client';
 import { Input, Select, createTheme, rem } from '@mantine/core';
 import { generateColors } from '@mantine/colors-generator';
-import ChevronDown from '@dfds-ui/icons/system/ChevronDown';
+import ChevronDown from 'icons/src/system/ChevronDown';
 import classes from './theme.module.css';
 
 import { dfdsFont } from './fonts';
-
 
 export const theme = createTheme({
   fontFamily: dfdsFont.style.fontFamily,
@@ -92,12 +91,15 @@ export const theme = createTheme({
 
     Select: Select.extend({
       defaultProps: {
-        rightSection: <><ChevronDown /></>,
+        rightSection: (
+          <>
+            <ChevronDown />
+          </>
+        ),
         classNames: {
           dropdown: classes.selectDropdown,
         },
       },
-
     }),
   },
 

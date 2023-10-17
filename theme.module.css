@@ -1,0 +1,34 @@
+
+.input {
+  border-width: 2px;
+  height:  40px;
+
+
+
+  &::placeholder {
+        color: var(--mantine-color-text-light-primary-2);
+      }
+  &[data-error]::placeholder {
+    color: var(--mantine-color-text-light-primary-2);
+  }
+  &[data-error] {
+    border-color:  var(--mantine-color-status-alert-5);
+  }
+}
+
+.inputError {
+  color:  var(--mantine-color-status-alert-5);
+}
+
+.inputAsterisk {
+  color:  var(--mantine-color-text-secondary-primary-5);
+}
+
+.inputSection {
+  color: black;
+}
+
+.selectDropdown {
+  margin-top: -8px;
+  box-shadow: var(--mantine-shadow-md);
+}

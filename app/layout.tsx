@@ -4,7 +4,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
+  title: 'Mantine DFDS Next.js template',
   description: 'I am using Mantine with Next.js!',
 };
 

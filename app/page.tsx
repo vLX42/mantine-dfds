@@ -1,11 +1,16 @@
+import { Suspense } from 'react';
 import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { ComponentsTest } from '../components/ComponentsTest/ComponentsTest';
+import { RickAndMorty } from '../components/RickAndMorty/RickAndMorty';
 
 export default function HomePage() {
   return (
     <>
       <Welcome />
-      <ColorSchemeToggle />
+      <ComponentsTest />
+      <Suspense fallback={<div>Loading...</div>}>
+        <RickAndMorty />
+      </Suspense>
     </>
   );
 }
